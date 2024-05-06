@@ -16,7 +16,8 @@ def f(x):
     if x>N:
         for i in range(1,N+1):
             if cnt[i]!=A[i]: return
-        print(*cnt[1:])
+        for num in A:
+            print(f"이 문제에 숫자 {num}이 ({A[num]})개 있다.")
         return 1
     for i in range(cnt[x],N+1):
         A[x]=i
